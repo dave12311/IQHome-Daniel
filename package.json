@@ -1,0 +1,17 @@
+{
+  "name": "iqhome-tts",
+  "version": "1.0.0",
+  "description": "Daniel service for IQHome videos",
+  "main": "tts.js",
+  "author": "IQHome <io@iqhome.org>",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.1.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "opn": "^6.0.0"
+  },
+  "scripts": {
+    "start": "node tts.js"
+  }
+}

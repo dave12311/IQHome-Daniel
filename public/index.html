@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+    <style>
+      .main {
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+      }
+
+      #circlebox {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">IQHome Daniel</a>
+      </div>
+    </nav>
+
+    <div class="container" id="circlebox" style="display: none">
+      <div class="row center-align">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main">
+      <div class="row">
+        <form class="col s12">
+          <div class="input-field col s12">
+            <textarea id="text" class="materialize-textarea"></textarea>
+            <label for="text">Text to Daniel</label>
+          </div>
+        </form>
+      </div>
+
+      <div class="row center-align">
+        <audio id="player" controls></audio>
+      </div>
+
+      <div class="row center-align">
+        <a class="waves-effect waves-light btn" id="daniel">Click to Daniel</a>
+      </div>
+
+      <div class="row center-align">
+        <a class="waves-effect waves-light btn disabled" id="download"
+          >Download Daniel</a
+        >
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
